@@ -1,0 +1,4 @@
+project_id = "skhehnwamymmrmmiwtng"
+
+[functions.analyze-soil]
+verify_jwt = false
