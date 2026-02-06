@@ -21,17 +21,18 @@ const App = () => (
       <Toaster />
       <Sonner />
 
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/explore" element={<Explore />} />
-        <Route path="/auth" element={<Auth />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/plant/:id" element={<PlantDetails />} />
-        <Route path="/my-garden" element={<MyGarden />} />
-        <Route path="/disease-detector" element={<DiseaseDetector />} />
-        <Route path="/soil-tester" element={<SoilTester />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+<Routes>
+  <Route index element={<Landing />} />
+  <Route path="explore" element={<Explore />} />
+  <Route path="auth" element={<Auth />} />
+  <Route path="about" element={<About />} />
+  <Route path="plant/:id" element={<PlantDetails />} />
+  <Route path="my-garden" element={<MyGarden />} />
+  <Route path="disease-detector" element={<DiseaseDetector />} />
+  <Route path="soil-tester" element={<SoilTester />} />
+  <Route path="*" element={<NotFound />} />
+</Routes>
+
 
     </TooltipProvider>
   </QueryClientProvider>
